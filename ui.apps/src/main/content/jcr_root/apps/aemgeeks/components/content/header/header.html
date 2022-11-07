@@ -1,0 +1,12 @@
+<h1>Header Component</h1>
+<div data-sly-use.headerModel="${'com.aem.geeks.core.models.HeaderModel'}">
+<b>Resource Page Title : ${headerModel.getPageTitle}</b>
+<br>
+<b>Some Logs : ${headerModel.getChildPagesName ? headerModel.getChildPagesName : resource.name}</b>
+
+
+</div>
+
+
+
+
