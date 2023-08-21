@@ -1,0 +1,17 @@
+{
+  "user": {
+    "phoneNumber": "+918971131398",
+    "userName": "Pedapati",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "country": "India",
+    "sling:resourceType": "aemgeeks/components/content/user"
+  },
+  "user-without-phone": {
+    "userName": "Pedapati",
+    "city": "Chennai",
+    "state": "Tamilnadu",
+    "country": "India",
+    "sling:resourceType": "aemgeeks/components/content/user"
+  }
+}
