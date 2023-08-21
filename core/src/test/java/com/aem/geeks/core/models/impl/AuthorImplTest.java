@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ExtendWith({AemContextExtension.class, MockitoExtension.class})
 class AuthorImplTest {
@@ -23,8 +24,16 @@ class AuthorImplTest {
         aemContext.load().json("/com/aem/geeks/core/models/impl/Author.json","/component");
         aemContext.load().json("/com/aem/geeks/core/models/impl/Page.json","/page");
         aemContext.load().json("/com/aem/geeks/core/models/impl/Resource.json","/resource");
+        aemContext.load().json("/com/aem/geeks/core/models/impl/Pagev2.json","/pagev2");
     }
 
+
+    @Test
+    void getPageTitleV2(){
+        aemContext.currentPage("/pagev2/currentPagev2");
+        author=aemContext.request().adaptTo(Author.class);
+        assertEquals("Murali page",author.getPageTitle());
+    }
     @Test
     void getPageTitle() {
         aemContext.currentPage("/page/currentPage");
