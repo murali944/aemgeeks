@@ -1,0 +1,16 @@
+<div data-sly-use.byline="com.aem.geeks.core.models.Byline"
+   data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+   data-sly-test.hasContent="${!byline.empty}"   
+   class="cmp-byline">
+
+      <div>
+         <div class="cmp-byline__image"
+            data-sly-resource="${ '.' @ resourceType = 'core/wcm/components/image/v2/image' }">
+         </div>
+      </div>
+      <div>
+         <h2 style="text-align:center" class="cmp-byline__name">${byline.name}</h2>
+         <p style="text-align:center" class="cmp-byline__occupations">${byline.occupations @ join=', '}</p>
+      </div>
+</div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>

@@ -7,11 +7,6 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 import com.aem.geeks.core.models.User;
 
-/*@Model(adaptables = SlingHttpServletRequest.class,
-       adapters = Author.class,
-       resourceType = AuthorImpl.RESOURCE_TYPE,
-       defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
-)*/
 @Model(adaptables = SlingHttpServletRequest.class,
        adapters = User.class,
        resourceType = UserImpl.RESOURCE_TYPE,

@@ -1,0 +1,35 @@
+{
+  "byline": {
+    "occupations": [
+      "Teacher",
+      "Player"
+    ],
+    "name": "Murali",
+    "jcr:lastModified": "Fri Aug 25 2023 00:19:38 GMT+0530",
+    "sling:resourceType": "aemgeeks/components/content/byline"
+  },
+  "byline_only_name": {
+    "name": "Ravi",
+    "jcr:lastModified": "Fri Aug 25 2023 00:20:46 GMT+0530",
+    "sling:resourceType": "aemgeeks/components/content/byline"
+  },
+  "byline_only_occupations": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "occupations": [
+      "Developer",
+      "Scrum Master"
+    ],
+    "sling:resourceType": "aemgeeks/components/content/byline"
+  },
+  "byline_empty_occupations": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "occupations": [],
+    "sling:resourceType": "aemgeeks/components/content/byline"
+  },
+  "empty": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "aemgeeks/components/content/byline"
+  }
+}
