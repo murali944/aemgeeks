@@ -18,10 +18,12 @@ import javax.servlet.ServletException;
 import java.io.IOException;
 import java.util.List;
 
+
+//Test url : http://localhost:4502/content/aemgeeks/us/en/page-for-components/jcr:content.geeks.txt
 @Component(service = Servlet.class)
 @SlingServletResourceTypes(
         methods = {HttpConstants.METHOD_GET,HttpConstants.METHOD_POST},
-        resourceTypes = "aemgeeks/components/structure/page",
+        resourceTypes = "aemgeeks/components/page",
         selectors = {"geeks","test"},
         extensions = {"txt","xml"}
 )

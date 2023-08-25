@@ -39,6 +39,7 @@ class BylineImplTest {
 
     @BeforeEach
     void setUp() throws Exception {
+        /**/
         ctx.addModelsForClasses(BylineImpl.class);
         ctx.load()
            .json("/com/aem/geeks/core/models/impl/BylineImplTest.json", "/content");
@@ -46,13 +47,15 @@ class BylineImplTest {
 
     @Test
     public void testGetName() {
-        final String expected = "Murali";
+
 
         ctx.currentResource("/content/byline");
         Byline byline = ctx.request()
                            .adaptTo(Byline.class);
 
         String actual = byline.getName();
+        String expected = "Murali";
+
 
         assertEquals(expected, actual);
     }
